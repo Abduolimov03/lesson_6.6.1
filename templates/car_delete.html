@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>O‘chirishni Tasdiqlash</title>
+</head>
+<body>
+    <h2>{{ car.brand }} mashinani o‘chirmoqchimisiz?</h2>
+    <form method="POST">
+        {% csrf_token %}
+        <button type="submit">Ha, o‘chirish</button>
+        <a href="{% url 'car' %}">Bekor qilish</a>
+    </form>
+</body>
+</html>
